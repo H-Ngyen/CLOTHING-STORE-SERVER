@@ -88,7 +88,6 @@ async function Register(req, res) {
             message: 'Đăng ký thành công!',
             token: `Bearer ${token}`,
             user: {
-                id: newUser._id,
                 email: newUser.email
             }
         });
